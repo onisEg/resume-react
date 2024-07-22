@@ -1,0 +1,123 @@
+@media (min-width: 1200px) {
+  .navbar > .container,
+  .navbar > .container-fluid,
+  .navbar > .container-lg,
+  .navbar > .container-md,
+  .navbar > .container-sm,
+  .navbar > .container-xl,
+  .navbar > .container-xxl {
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+  }
+  nav.navbar.navbar-expand-lg.bg-body-tertiary {
+    height: 100vh;
+  }
+}
+
+/* for desktop */
+@media (min-width: 992px) {
+  .navbar-expand-lg {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center;
+  }
+  .navbar-expand-lg .navbar-nav {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  .navbar-expand-lg .navbar-collapse {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .profile-img {
+    width: 9rem;
+    height: 9rem;
+  }
+  .profile-img img {
+    object-fit: cover;
+    height: 100%;
+    border-radius: 50%;
+  }
+  .username {
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    font-size: 1.375rem;
+    font-family: Playfair Display, Georgia, serif;
+  }
+  .navbar-expand-lg p {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    font-family: Quicksand, Arial, sans-serif;
+    font-weight: 400;
+    color: #000000b3;
+    line-height: 1.8;
+  }
+
+  .navbar-nav {
+    font-family: Quicksand, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  .navbar-nav li a {
+    text-decoration: none;
+    padding: 5px 0;
+    transition: 0.3s;
+    color: #000000b3;
+    position: relative;
+  }
+  .col-md-3 {
+    padding: 0;
+  }
+}
+
+.col-md-3.navigation {
+  padding: 0;
+}
+/* For Mobile screen */
+@media (max-width: 768px) {
+  nav.navbar.navbar-expand-lg.bg-body-tertiary {
+    background-color: rgba(59, 59, 59, 0.082) !important;
+  }
+  .profile-img {
+    width: 15rem;
+    height: 15rem;
+    margin: auto;
+  }
+  .profile-img img {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  .username {
+    margin: auto;
+  }
+  .userInfo {
+    margin: auto;
+  }
+  .navbar-collapse.collapse {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+}
